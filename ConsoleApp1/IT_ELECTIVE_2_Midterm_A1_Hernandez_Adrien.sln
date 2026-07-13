@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5E208DFF-EE8F-44F6-8E8C-42441671A944}"
+# Visual Studio Version 18
+VisualStudioVersion = 18.7.11925.98 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_ELECTIVE_2_Midterm_A1_Hernandez_Adrien", "WebApplication1\IT_ELECTIVE_2_Midterm_A1_Hernandez_Adrien.csproj", "{5E208DFF-EE8F-44F6-8E8C-42441671A944}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +15,8 @@ Global
 		{5E208DFF-EE8F-44F6-8E8C-42441671A944}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E208DFF-EE8F-44F6-8E8C-42441671A944}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E208DFF-EE8F-44F6-8E8C-42441671A944}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
