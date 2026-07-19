@@ -1,24 +1,34 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
 
-namespace WebApplication1.Controllers;
-
-public class HomeController : Controller
+namespace IT_ELECTIVE_2_Midterm_A1_Hernandez_Adrien.Controllers
 {
-    public IActionResult Index()
+    public class HomeController : Controller
     {
-        return View();
-    }
+        public IActionResult Index()
+        {
+            ViewData["Name"] = "Adrien Hernandez";
+            return View();
+        }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
+        public IActionResult About()
+        {
+            ViewData["About"] = "I am an IT student passionate about software and web development.";
+            return View();
+        }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        public IActionResult Skills()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
     }
 }
