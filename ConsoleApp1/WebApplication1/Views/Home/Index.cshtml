@@ -2,8 +2,7 @@
     ViewData["Title"] = "Home";
 }
 
-<!-- HOME SECTION -->
-<section id="home" class="container py-5">
+<section class="container py-5">
 
     <div class="row align-items-center">
 
@@ -19,28 +18,31 @@
         <div class="col-lg-6">
 
             <h1 class="display-3 fw-bold">
-                Adrien Hernandez
+                @ViewData["Name"]
             </h1>
 
             <h3 class="text-primary mb-4">
-                Aspiring IT Professional
+                @ViewData["Role"]
             </h3>
 
             <p class="lead">
-                Hello! I am currently pursuing a Bachelor of Science in Information Technology.
-                I have a passion for technology, problem-solving, and continuously learning
-                new skills. I enjoy exploring different areas of IT such as web development,
-                databases, networking, and system administration.
+                @ViewData["Intro"]
             </p>
 
-            <a href="#projects" class="btn btn-primary btn-lg me-3">
+            <a asp-controller="Home"
+               asp-action="Projects"
+               class="btn btn-primary btn-lg me-3">
                 View Projects
             </a>
 
-            <a href="#contact" class="btn btn-outline-dark btn-lg">
+            <a asp-controller="Home"
+               asp-action="Contact"
+               class="btn btn-outline-dark btn-lg">
                 Contact Me
             </a>
 
         </div>
 
     </div>
+
+</section>

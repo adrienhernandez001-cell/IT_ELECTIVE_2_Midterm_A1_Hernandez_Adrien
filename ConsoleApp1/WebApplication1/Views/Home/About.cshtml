@@ -2,6 +2,70 @@
     ViewData["Title"] = "About";
 }
 
-<h1>About Me</h1>
+<section class="container py-5">
 
-<p>@ViewData["About"]</p>
+    <h2 class="text-center mb-5">About Me</h2>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+
+            <p class="lead">
+                @ViewData["About1"]
+            </p>
+
+            <p class="lead">
+                @ViewData["About2"]
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="row mt-5">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <h4 class="text-primary">🎓 Education</h4>
+                    <hr />
+
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p>Current College Student</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <h4 class="text-primary">💼 Career Goal</h4>
+                    <hr />
+
+                    <p>Become a Professional IT Specialist</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+
+                    <h4 class="text-primary">🎨 Interests</h4>
+                    <hr />
+
+                    <p>Art</p>
+                    <p>Gaming</p>
+                    <p>Music</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
