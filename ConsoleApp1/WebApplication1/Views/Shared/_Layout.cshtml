@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>@ViewData["Title"] - My Portfolio</title>
+
+		<title>@ViewData["Title"] | Adrien Hernandez Portfolio</title>
 
 		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -64,7 +65,6 @@
 			}
 			}
 		</style>
-
 	</head>
 
 	<body>
@@ -73,11 +73,25 @@
 
 			<h2>Portfolio</h2>
 
-			<a href="#home">Home</a>
-			<a href="#about">About Me</a>
-			<a href="#skills">Skills</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
+			<a asp-controller="Home" asp-action="Index">
+				🏠 Home
+			</a>
+
+			<a asp-controller="Home" asp-action="About">
+				👤 About Me
+			</a>
+
+			<a asp-controller="Home" asp-action="Skills">
+				💻 Skills
+			</a>
+
+			<a asp-controller="Home" asp-action="Projects">
+				📂 Projects
+			</a>
+
+			<a asp-controller="Home" asp-action="Contact">
+				📞 Contact
+			</a>
 
 		</div>
 

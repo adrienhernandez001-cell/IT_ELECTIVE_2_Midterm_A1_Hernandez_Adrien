@@ -1,24 +1,50 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
 
-namespace WebApplication1.Controllers;
-
-public class HomeController : Controller
+namespace IT_ELECTIVE_2_Midterm_A1_Hernandez_Adrien.Controllers
 {
-    public IActionResult Index()
+    public class HomeController : Controller
     {
-        return View();
-    }
+        public IActionResult Index()
+        {
+            ViewData["Title"] = "Home";
+            ViewData["Name"] = "Adrien Hernandez";
+            ViewData["Role"] = "Aspiring IT Professional";
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
+            ViewData["Intro"] =
+                "Hello! I am currently pursuing a Bachelor of Science in Information Technology. I have a passion for technology, problem-solving, and continuously learning new skills. I enjoy exploring web development, databases, networking, and system administration.";
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Title"] = "About";
+
+            ViewData["About1"] =
+                "I am currently pursuing a Bachelor of Science in Information Technology. I have a strong passion for technology and enjoy learning different areas of IT including web development, databases, networking, and system administration.";
+
+            ViewData["About2"] =
+                "My goal is to become a Professional IT Specialist who can contribute to innovative technology solutions while continuously learning and adapting to new technologies.";
+
+            return View();
+        }
+
+        public IActionResult Skills()
+        {
+            ViewData["Title"] = "Skills";
+            return View();
+        }
+
+        public IActionResult Projects()
+        {
+            ViewData["Title"] = "Projects";
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["Title"] = "Contact";
+            return View();
+        }
     }
 }
